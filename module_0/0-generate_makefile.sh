@@ -1,3 +1,4 @@
 echo "TOto"
-mkdir dist
-touch index.md
+test -d dist || mkdir dist
+test -f index.md || touch index.md
+cp index.md dist/index.html
